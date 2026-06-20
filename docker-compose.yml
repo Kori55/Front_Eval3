@@ -3,6 +3,7 @@ services:
   frontend:
     build:
       image: nginx:alpine
+      context: .
     container_name: frontend-java
     ports:
       - "8080:8080"
