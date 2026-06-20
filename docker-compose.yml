@@ -1,0 +1,9 @@
+services:
+
+  frontend:
+    build:
+      context: .
+    container_name: frontend-java
+    ports:
+      - "8080:8080"
+    restart: always

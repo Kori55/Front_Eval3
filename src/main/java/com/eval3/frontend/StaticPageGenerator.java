@@ -398,8 +398,8 @@ footer {
     }
 
     private static void generateScriptJs() throws IOException {
-        String usersUrl = getEnv("BACKEND_USERS_URL", "http://localhost:8081");
-        String productsUrl = getEnv("BACKEND_PRODUCTS_URL", "http://localhost:8082");
+        String usersUrl = getEnv("BACKEND_USERS_URL", "http://localhost:8080");
+        String productsUrl = getEnv("BACKEND_PRODUCTS_URL", "http://localhost:5000");
         System.out.println("Configurando frontend: Users API -> " + usersUrl + " | Products API -> " + productsUrl);
 
         String js = """
